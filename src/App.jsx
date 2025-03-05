@@ -1,26 +1,17 @@
-import MenuLinks from "./Header/MenuLinks/MenuLinks";
-import Logo from "../src/assets/react.svg";
+import Banner from "./Banner/Banner";
+import Header from "./Header/Header";
 
 function App() {
   return (
-    <nav className="flex items-center justify-between px-10 py-6 bg-white shadow-md">
-      {/* Logo Section */}
-      <div className="flex items-center">
-        <img src={Logo} className="w-12 h-12" alt="Logo" />
-      </div>
-
-      {/* Navigation Links */}
-      <div className="rounded-md">
-        <MenuLinks />
-      </div>
-
-      {/* Explore Button */}
-      <div>
-        <button className="flex items-center gap-2 px-4 py-2 text-white bg-[#f45858] rounded-lg shadow-md hover:bg-[#d84646] transition duration-300">
-          <span className="text-lg">Explore</span> <span>➡️</span>
-        </button>
-      </div>
-    </nav>
+    <>
+      <Header />
+      <Banner
+        h1={'GO fitness'}
+        p={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, reiciendis pariatur sequi tempore ipsam obcaecati voluptatem consequatur dolorum! Facilis quam dolores ratione laborum quis repudiandae, aut eum tempore dolorem tenetur'}
+        button1={'Lets go'}
+        button2={'Explore'}
+      />
+    </>
   );
 }
 
