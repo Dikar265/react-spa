@@ -1,4 +1,4 @@
-import { menuLinks } from "../../Props/MenuLinks";
+import { menuLinks } from "../../../Props/MenuLinks";
 
 export default function MenuLinks() {
   return (

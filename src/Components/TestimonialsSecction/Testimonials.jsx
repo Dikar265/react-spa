@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { testimonials } from "../Props/Testimonials";
+import { testimonials } from "../../Props/Testimonials";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -25,21 +25,17 @@ export default function Testimonials() {
     >
       {testimonials.map((testimonial, index) => (
         <SwiperSlide key={index}>
-          <div className="mb-12 bg-gray-800 shadow-xl rounded-2xl p-6 border border-gray-700 max-w-md mx-auto flex flex-col justify-around h-50">
+          <div className="mb-12  shadow-xl rounded-2xl p-6 border max-w-md mx-auto flex flex-col justify-around h-50">
             {/* Review Text */}
-            <p className="italic text-gray-300 text-lg">
-              "{testimonial.review}"
-            </p>
+            <p className="italic  text-lg">"{testimonial.review}"</p>
 
             {/* User Info */}
             <div className="mt-6 flex items-center space-x-4">
               {/* Avatar Placeholder */}
-              <div className="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center text-white text-lg font-bold">
+              <div className="w-12 h-12  rounded-full flex items-center justify-center  text-lg font-bold">
                 {testimonial.name.charAt(0)}
               </div>
-              <p className="font-semibold text-white text-lg">
-                {testimonial.name}
-              </p>
+              <p className="font-semibold  text-lg">{testimonial.name}</p>
             </div>
           </div>
         </SwiperSlide>

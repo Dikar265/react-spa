@@ -18,17 +18,17 @@ export default function SliderCards({ cardsProps }) {
     >
       {cardsProps.map((cardsProp, index) => (
         <SwiperSlide key={index} className="flex justify-center">
-          <div className="bg-gradient-to-b from-gray-900 to-gray-800 rounded-2xl p-6 flex flex-col items-center text-center h-[250px] shadow-xl hover:shadow-2xl mb-10">
+          <div className="bg-gradient-to-b  rounded-2xl p-6 flex flex-col items-center text-center h-[250px] shadow-xl hover:shadow-2xl mb-10">
             {/* Icon */}
             <div className="text-7xl text-red-500 mb-4">{cardsProp.icon}</div>
 
             {/* Title */}
-            <h3 className="text-xl font-bold text-white uppercase tracking-wide">
+            <h3 className="text-xl font-bold  uppercase tracking-wide">
               {cardsProp.tittle}
             </h3>
 
             {/* Description */}
-            <p className="text-gray-300 text-sm mt-3 px-4">
+            <p className=" text-sm mt-3 px-4">
               {cardsProp.description}
             </p>
           </div>

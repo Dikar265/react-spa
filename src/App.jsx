@@ -1,9 +1,12 @@
-import AboutSection from "./AboutSecction/AboutSecction";
-import Banner from "./Banner/Banner";
-import Header from "./Header/Header";
+import AboutSection from "./Components/AboutSecction/AboutSecction";
+import Banner from "./Components/Banner/Banner";
+import Header from "./Components/Header/Header";
 import imgseccion2 from "./assets/secction2_img.jpg";
 import { textProps } from "./Props/TextAbout";
-import Testimonials from "./SliderTestimonial/Testimonials";
+import Testimonials from "./Components/TestimonialsSecction/TestimonialSecction";
+import SliderBlog from "./Components/SliderBlog/SliderBlog";
+import Calendar from "./Components/Calendar/Calendar";
+import Faq from "./Components/Faq/Faq";
 
 function App() {
   return (
@@ -17,16 +20,17 @@ function App() {
       />
       <AboutSection h2={"lorem ipsum"} img={imgseccion2} texts={textProps} />
 
-      <section className="py-20 px-6 text-center flex flex-col items-center bg-gradient-to-b from-gray-900 to-black text-white">
-  <h2 className="text-4xl md:text-5xl font-bold mb-8 uppercase tracking-wide">
-    What Our Members Say
-  </h2>
+      <Testimonials h2={"What Our Members Say"} />
 
-  <div className="max-w-4xl w-full">
-    <Testimonials />
-  </div>
-</section>
+      <section className="flex justify-center ">
+        <Calendar />
 
+        <Faq />
+      </section>
+
+      <section className="p-52">
+        <SliderBlog />
+      </section>
     </>
   );
 }

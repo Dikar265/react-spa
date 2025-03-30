@@ -1,5 +1,5 @@
-import MenuLinks from "../Header/MenuLinks/MenuLinks";
-import Logo from "../../src/assets/react.svg";
+import MenuLinks from "./MenuLinks/MenuLinks";
+import Logo from "../../../src/assets/react.svg";
 
 export default function Header() {
   return (
