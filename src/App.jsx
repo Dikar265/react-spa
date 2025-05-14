@@ -1,36 +1,34 @@
-import AboutSection from "./Components/AboutSecction/AboutSecction";
-import Banner from "./Components/Banner/Banner";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./Components/ScrollToTop ";
+import Home from "./Pages/Home";
+import Services from "./Pages/Services";
+import Services1 from "./Pages/Services/Service1";
+import Services2 from "./Pages/Services/Service2";
+import Services3 from "./Pages/Services/Service3";
+import Services4 from "./Pages/Services/Service4";
+import Blog from "./Pages/Blog";
+import Contact from "./Pages/Contact";
+import BlogDetail from "./Pages/BlogDetail";
 import Header from "./Components/Header/Header";
-import imgseccion2 from "./assets/secction2_img.jpg";
-import { textProps } from "./Props/TextAbout";
-import Testimonials from "./Components/TestimonialsSecction/TestimonialSecction";
-import SliderBlog from "./Components/SliderBlog/SliderBlog";
-import Calendar from "./Components/Calendar/Calendar";
-import Faq from "./Components/Faq/Faq";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Header />
-      <Banner
-        h1={"Track. Train. Transform"}
-        p={"The ultimate fitness widgets to enhance your workout experience."}
-        button1={"Get Started"}
-        button2={"Try for Free"}
-      />
-      <AboutSection h2={"lorem ipsum"} img={imgseccion2} texts={textProps} />
-
-      <Testimonials h2={"What Our Members Say"} />
-
-      <section className="flex justify-center ">
-        <Calendar />
-
-        <Faq />
-      </section>
-
-      <section className="p-52">
-        <SliderBlog />
-      </section>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services/" element={<Services />} />
+        <Route path="/service/1" element={<Services1 />} />
+        <Route path="/service/2" element={<Services2 />} />
+        <Route path="/service/3" element={<Services3 />} />
+        <Route path="/service/4" element={<Services4 />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogDetail />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
     </>
   );
 }

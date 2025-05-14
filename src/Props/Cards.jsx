@@ -1,45 +1,116 @@
-import { IconHeartbeat, IconRun, IconApple, IconYoga, IconBolt, IconWeight, IconTarget, IconTrophy } from "@tabler/icons-react";
+import {
+  IconHeartbeat,
+  IconRun,
+  IconApple,
+  IconYoga,
+  IconBolt,
+  IconWeight,
+  IconTarget,
+  IconTrophy,
+} from "@tabler/icons-react";
+import imgseccion1 from "../assets/pexels-christy-rice-1208544-2353413.jpg";
+import imgseccion2 from "../assets/pexels-freestockpro-1174081.jpg";
+import imgseccion3 from "../assets/pexels-hilaryh-38008.jpg";
+import imgseccion4 from "../assets/pexels-svetozar-milashevich-99573-1490908.jpg";
 
 export const cards = [
+  {
+    icon: <IconHeartbeat className="text-black" />,
+    tittle: "Pet Wellness",
+    description:
+      "Keep your furry friends healthy with regular checkups and care tips.",
+  },
+  {
+    icon: <IconRun className="text-black" />,
+    tittle: "Daily Walks",
+    description:
+      "Ensure your pet stays active and happy with consistent exercise routines.",
+  },
+  {
+    icon: <IconApple className="text-black" />,
+    tittle: "Healthy Nutrition",
+    description:
+      "Discover the best diets and treats tailored for your pet’s needs.",
+  },
+  {
+    icon: <IconYoga className="text-black" />,
+    tittle: "Relaxation & Play",
+    description:
+      "Balance activity with rest and fun games that boost mental health.",
+  },
+  {
+    icon: <IconBolt className="text-black" />,
+    tittle: "Energetic Pups",
+    description: "Engage high-energy pets with fun, fast-paced activities.",
+  },
+  {
+    icon: <IconWeight className="text-black" />,
+    tittle: "Weight Control",
+    description:
+      "Help your pet maintain a healthy weight with proper nutrition and activity.",
+  },
+  {
+    icon: <IconTarget className="text-black" />,
+    tittle: "Training Goals",
+    description:
+      "Set milestones and track your pet’s behavior and obedience progress.",
+  },
+  {
+    icon: <IconTrophy className="text-black" />,
+    tittle: "Pet Contests",
+    description:
+      "Prepare your pet for shows and friendly competitions with confidence.",
+  },
+];
 
+export const vetServices = [
   {
-    icon: <IconHeartbeat className="text-blue-500 text-3xl" />,
-    tittle: "Cardio Blast",
-    description: "Improve endurance and heart health with high-intensity workouts.",
+    tittle: "Health Checkups",
+    description:
+      "Routine examinations to ensure your pet stays happy and healthy.",
+    img: imgseccion1,
+    link: "/service/1",
   },
   {
-    icon: <IconRun className="text-green-500 text-3xl" />,
-    tittle: "Running & Sprinting",
-    description: "Enhance speed and stamina with structured running routines.",
+    tittle: "Lorem",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    img: imgseccion2,
+    link: "/service/2",
   },
   {
-    icon: <IconApple className="text-yellow-500 text-3xl" />,
-    tittle: "Nutrition & Diet",
-    description: "Fuel your body with the right nutrients for optimal performance.",
+    tittle: "Dental Care",
+    description:
+      "Professional dental cleanings to keep your pet’s smile bright.",
+    img: imgseccion3,
+    link: "/service/3",
   },
   {
-    icon: <IconYoga className="text-purple-500 text-3xl" />,
-    tittle: "Mobility & Flexibility",
-    description: "Prevent injuries and improve movement with stretching exercises.",
+    tittle: "Grooming",
+    description:
+      "Pamper your pet with full grooming services by our gentle team.",
+    img: imgseccion4,
+    link: "/service/4",
   },
-  {
-    icon: <IconBolt className="text-orange-500 text-3xl" />,
-    tittle: "HIIT Workouts",
-    description: "Burn fat fast with high-intensity interval training sessions.",
-  },
-  {
-    icon: <IconWeight className="text-gray-500 text-3xl" />,
-    tittle: "Weightlifting",
-    description: "Master proper lifting techniques to increase muscle mass.",
-  },
-  {
-    icon: <IconTarget className="text-teal-500 text-3xl" />,
-    tittle: "Goal Setting",
-    description: "Stay motivated and track progress towards your fitness goals.",
-  },
-  {
-    icon: <IconTrophy className="text-indigo-500 text-3xl" />,
-    tittle: "Competition Prep",
-    description: "Train like a pro and get ready for your next fitness challenge.",
-  },
+];
+
+export const logos = [
+  { img: "../src/assets/logos/1.webp",  link: "/1"  },
+  { img: "../src/assets/logos/2.webp",  link: "/2"  },
+  { img: "../src/assets/logos/3.webp",  link: "/3"  },
+  { img: "../src/assets/logos/4.webp",  link: "/4"  },
+  { img: "../src/assets/logos/5.webp",  link: "/5"  },
+  { img: "../src/assets/logos/6.webp",  link: "/6"  },
+  { img: "../src/assets/logos/7.webp",  link: "/7"  },
+  { img: "../src/assets/logos/8.webp",  link: "/8"  },
+  { img: "../src/assets/logos/9.webp",  link: "/9"  },
+  { img: "../src/assets/logos/10.webp", link: "/10" },
+  { img: "../src/assets/logos/11.webp", link: "/11" },
+  { img: "../src/assets/logos/12.webp", link: "/12" },
+  { img: "../src/assets/logos/13.webp", link: "/13" },
+  { img: "../src/assets/logos/14.webp", link: "/14" },
+  { img: "../src/assets/logos/15.png",  link: "/15" },
+  { img: "../src/assets/logos/16.webp", link: "/16" },
+  { img: "../src/assets/logos/17.webp", link: "/17" },
+  { img: "../src/assets/logos/18.png",  link: "/18" },
+  { img: "../src/assets/logos/19.webp", link: "/19" }
 ];
