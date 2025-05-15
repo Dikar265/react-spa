@@ -1,6 +1,8 @@
 import { BandCards } from "../../Components/Cards";
 import { Underline } from "../../Components/Underline";
-
+import NumberGrid from "../../Components/NumberGrid";
+import petBlogStats from "../../Props/Numbers";
+import { servicetext1 } from "../../Props/TextAbout";
 export default function Service1() {
   return (
     <>
@@ -18,43 +20,9 @@ export default function Service1() {
           <h2 className="text-center text-9xl">lorem impsu</h2>
           <div className="grid grid-cols-2 px-20 gap-10">
             <div className="text-left space-y-6">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                impedit ipsum, veniam error necessitatibus eveniet numquam modi
-                quaerat molestias aperiam, non earum architecto voluptatum
-                pariatur voluptates. Nemo perspiciatis neque voluptas. Lorem
-                ipsum dolor sit amet, consectetur adipisicing elit.
-              </p>
-              <p>
-                 Dolorem
-                nobis voluptate quis, culpa ex ipsa a hic? Excepturi laboriosam
-                itaque sunt nostrum! Consequuntur esse optio nulla error, quod
-                id cumque? Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit. Necessitatibus, eos iusto repellat, consequuntur possimus
-                obcaecati distinctio animi sint quos, tempora magnam.
-                Doloremque, nostrum? Optio deserunt adipisci vel recusandae,
-                commodi sint.
-              </p>
-              <p>
-                 Dolorem
-                nobis voluptate quis, culpa ex ipsa a hic? Excepturi laboriosam
-                itaque sunt nostrum! Consequuntur esse optio nulla error, quod
-                id cumque? Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit. Necessitatibus, eos iusto repellat, consequuntur possimus
-                obcaecati distinctio animi sint quos, tempora magnam.
-                Doloremque, nostrum? Optio deserunt adipisci vel recusandae,
-                commodi sint.
-              </p>
-              <p>
-                 Dolorem
-                nobis voluptate quis, culpa ex ipsa a hic? Excepturi laboriosam
-                itaque sunt nostrum! Consequuntur esse optio nulla error, quod
-                id cumque? Lorem ipsum dolor sit amet consectetur, adipisicing
-                elit. Necessitatibus, eos iusto repellat, consequuntur possimus
-                obcaecati distinctio animi sint quos, tempora magnam.
-                Doloremque, nostrum? Optio deserunt adipisci vel recusandae,
-                commodi sint.
-              </p>
+              {servicetext1.map((servicetext, index) => (
+                <p key={index}>{servicetext}</p>
+              ))}
             </div>
             <div>
               
@@ -64,6 +32,9 @@ export default function Service1() {
           <Underline color={'border-gray-400'} />
 
         </div>
+      </section>
+      <section>
+        <NumberGrid props={petBlogStats}/>
       </section>
     </>
   );

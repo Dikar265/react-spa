@@ -3,7 +3,6 @@ import Banner from "../Components/Banner";
 import imgseccion2 from "../assets/pexels-caio-56733.jpg";
 import { textProps } from "../Props/TextAbout";
 import Testimonials from "../Components/TestimonialSecction";
-import SliderBlog from "../Components/SliderBlog";
 import { CardsServices } from "../Components/Cards";
 import Calendar from "../Components/Calendar";
 import Faq from "../Components/Faq";
@@ -22,7 +21,6 @@ function App() {
 
       <CardsServices/>
       <Testimonials h2={"What Our Members Say"} />
-      <SliderBlog />
     </>
   );
 }

@@ -3,9 +3,11 @@ import MenuLinks from "./MenuLinks/MenuLinks";
 import ContactLinks from "../ContactLinks";
 import Newsletter from "./Newsletter/Newsletter";
 import { Underline } from "../Underline";
+import SliderBlog from "../../Components/SliderBlog"
 export default function Footer() {
   return (
     <>
+    <SliderBlog />
     <Newsletter/>
     <footer className="flex flex-wrap justify-between px-24 pb-12 pt-12 relative">
       <div className="flex flex-col w-full md:w-1/4 gap-2 items-center">

@@ -3,3 +3,13 @@ export const textProps = [
     'Nulla mollis sit amet libero a laoreet. Ut non orci in orci lobortis molestie nec sit amet est. Nullam aliquet lacinia eros ut tempor. Suspendisse dapibus tellus enim, eu cursus tellus commodo sed. Vivamus non erat tincidunt, feugiat orci eget, egestas eros. Vivamus diam massa, ultrices vitae tortor sed, interdum congue tellus. Sed quis erat at nibh suscipit blandit id eu tellus. Mauris at elit non ligula interdum tincidunt. Ut pulvinar maximus metus imperdiet rutrum. Pellentesque vestibulum, nisi id sodales luctus, est diam auctor lacus, nec finibus magna enim sit amet leo. Fusce massa nulla, posuere quis diam ac, suscipit rhoncus risus.',
     'Quisque ante metus, convallis ut rhoncus ut, eleifend sit amet sem. Phasellus velit augue, sodales in felis eget, gravida tempor eros. Sed nec sapien orci. Vestibulum elit orci, fermentum nec luctus id, finibus eget sem. Sed volutpat eleifend iaculis. Curabitur accumsan quis sem dapibus euismod. Donec sit amet fermentum orci, et facilisis quam. Donec dapibus turpis diam, at facilisis leo vulputate et. Vivamus ac massa sapien. Mauris ac massa non est gravida tincidunt sit amet eu augue. Sed vel orci vel sapien semper porttitor.',
 ]
+
+export const servicetext1 = [
+  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam impedit ipsum, veniam error necessitatibus eveniet numquam modi quaerat molestias aperiam, non earum architecto voluptatum pariatur voluptates. Nemo perspiciatis neque voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+  
+  "Dolorem nobis voluptate quis, culpa ex ipsa a hic? Excepturi laboriosam itaque sunt nostrum! Consequuntur esse optio nulla error, quod id cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, eos iusto repellat, consequuntur possimus obcaecati distinctio animi sint quos, tempora magnam. Doloremque, nostrum? Optio deserunt adipisci vel recusandae, commodi sint.",
+  
+  "Dolorem nobis voluptate quis, culpa ex ipsa a hic? Excepturi laboriosam itaque sunt nostrum! Consequuntur esse optio nulla error, quod id cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, eos iusto repellat, consequuntur possimus obcaecati distinctio animi sint quos, tempora magnam. Doloremque, nostrum? Optio deserunt adipisci vel recusandae, commodi sint.",
+  
+  "Dolorem nobis voluptate quis, culpa ex ipsa a hic? Excepturi laboriosam itaque sunt nostrum! Consequuntur esse optio nulla error, quod id cumque? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, eos iusto repellat, consequuntur possimus obcaecati distinctio animi sint quos, tempora magnam. Doloremque, nostrum? Optio deserunt adipisci vel recusandae, commodi sint."
+];

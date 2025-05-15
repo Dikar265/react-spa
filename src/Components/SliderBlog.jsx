@@ -7,13 +7,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import useEmblaCarousel from "embla-carousel-react";
 
 import { blogs } from "../Props/Blog.js";
 import { Link } from "react-router-dom";
 export default function SliderBlog() {
   return (
-    <section className="p-52">
+    <section className="p-25">
       <Carousel
         opts={{
           align: "start",
