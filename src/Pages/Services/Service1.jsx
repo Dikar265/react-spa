@@ -3,6 +3,9 @@ import { Underline } from "../../Components/Underline";
 import NumberGrid from "../../Components/NumberGrid";
 import petBlogStats from "../../Props/Numbers";
 import { servicetext1 } from "../../Props/TextAbout";
+import { Acordion } from "../../Components/Accordion";
+import { faqs } from "@/Props/Faq";
+
 export default function Service1() {
   return (
     <>
@@ -25,16 +28,20 @@ export default function Service1() {
               ))}
             </div>
             <div>
-              
-              <img src="/src/assets/pexels-christy-rice-1208544-2353413.jpg" className="w-auto h-full "/>
+              <img
+                src="/src/assets/pexels-christy-rice-1208544-2353413.jpg"
+                className="w-auto h-full "
+              />
             </div>
           </div>
-          <Underline color={'border-gray-400'} />
-
+          <Underline color={"border-gray-400"} />
         </div>
       </section>
-      <section>
-        <NumberGrid props={petBlogStats}/>
+      <section className="py-20 divide-x-1">
+        <NumberGrid props={petBlogStats} />
+      </section>
+      <section className="py-20 px-20 divide-x-1 flex justify-center">
+        <Acordion props={faqs} />
       </section>
     </>
   );

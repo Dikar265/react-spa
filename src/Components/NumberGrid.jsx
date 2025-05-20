@@ -1,7 +1,7 @@
 import CountUp from "react-countup";
 export default function NumberGrid({props}) {
   return (
-    <section className="grid grid-cols-4 py-20 divide-x-1">
+    <section className="grid grid-cols-4 divide-x-1">
       {props.map((prop, index) => (
         <div key={index} className="flex justify-center text-center">
           <div className="flex flex-col text-center space-y-6">
