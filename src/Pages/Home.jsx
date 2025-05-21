@@ -1,13 +1,14 @@
-import AboutSection from "../Components/AboutSecction";
+import {AboutSection} from "../Components/AboutSecction";
 import Banner from "../Components/Banner";
 import imgseccion2 from "../assets/pexels-caio-56733.jpg";
 import { textProps } from "../Props/TextAbout";
 import Testimonials from "../Components/TestimonialSecction";
 import { CardsServices } from "../Components/Cards";
-import Calendar from "../Components/Calendar";
-import Faq from "../Components/Faq";
+import { SliderCards } from '../Components/Cards.jsx';
 
 function App() {
+
+  const sliderCards = <SliderCards/>
   return (
     <>
     
@@ -17,7 +18,7 @@ function App() {
         button1={"Get Started"}
         button2={"Try for Free"}
       />
-      <AboutSection h2={"lorem ipsum"} img={imgseccion2} texts={textProps} />
+      <AboutSection h2={"lorem ipsum"} img={imgseccion2} texts={textProps} customWidget={sliderCards}/>
 
       <CardsServices/>
       <Testimonials h2={"What Our Members Say"} />
