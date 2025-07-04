@@ -14,6 +14,7 @@ function NavigationMenu({
 }: React.ComponentProps<typeof NavigationMenuPrimitive.Root> & {
   viewport?: boolean
 }) {
+  
   return (
     <NavigationMenuPrimitive.Root
       data-slot="navigation-menu"
