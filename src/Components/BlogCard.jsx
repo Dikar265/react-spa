@@ -9,7 +9,7 @@ import {
   PaginationLink,
   PaginationPrevious,
   PaginationNext,
-} from "@/components/ui/pagination";
+} from "@/Components/ui/pagination";
 
 export default function BlogsCard({ selectedCategory: selectedCategoryProp }) {
   const blogsPerPage = 5;

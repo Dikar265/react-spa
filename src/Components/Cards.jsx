@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { cards, vetServices, logos } from "@/Props/Cards.jsx";
 import { IconCircleArrowRight } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/Components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
 
 import {
@@ -11,7 +11,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/Components/ui/carousel";
 import useEmblaCarousel from "embla-carousel-react";
 
 useEmblaCarousel.globalOptions = { loop: true };

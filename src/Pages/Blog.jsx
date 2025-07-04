@@ -1,7 +1,7 @@
 import { useState } from "react";
-import BlogsCard from "../components/BlogCard";
-import BlogCategories from "../components/Categories";
-import { H1 } from "../components/Headings";
+import BlogsCard from "../Components/BlogCard";
+import BlogCategories from "../Components/Categories";
+import { H1 } from "../Components/Headings";
 
 export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState(null);

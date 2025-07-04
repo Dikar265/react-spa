@@ -1,7 +1,7 @@
-import ContactLinks from "../components/ContactLinks";
-import Input from "../components/Input";
-import TextTarea from "../components/TextTarea";
-import { H1 } from "../components/Headings";
+import ContactLinks from "../Components/ContactLinks";
+import Input from "../Components/Input";
+import TextTarea from "../Components/TextTarea";
+import { H1 } from "../Components/Headings";
 
 export default function Contact() {
   return (

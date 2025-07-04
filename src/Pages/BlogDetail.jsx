@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 import { blogs } from "@/Props/Blog";
-import BlogCategories from "../components/Categories";
+import BlogCategories from "../Components/Categories";
 import { Link } from "react-router-dom";
-import { H1, H2 } from "../components/Headings";
+import { H1, H2 } from "../Components/Headings";
 
 export default function BlogDetail() {
   const { slug } = useParams();

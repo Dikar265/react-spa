@@ -1,14 +1,14 @@
-import { AboutSection2 } from "@/components/AboutSecction";
+import { AboutSection2 } from "@/Components/AboutSecction";
 import { textProps } from "@/Props/TextAbout";
 import imgseccion2 from "../../assets/pexels-caio-56733.jpg";
 import { employees } from "@/Props/employees";
-import { H3 } from "../../components/Headings";
+import { H3 } from "../../Components/Headings";
 import {
   IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandX,
 } from "@tabler/icons-react";
-import Timeline from "../../components/TimeLine";
+import Timeline from "../../Components/TimeLine";
 export default function Service2() {
   return (
     <>

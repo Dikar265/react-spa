@@ -7,7 +7,7 @@ import {
   NavigationMenuTrigger,
   NavigationMenuContent,
   NavigationMenuLink,
-} from "@/components/ui/navigation-menu";
+} from "@/Components/ui/navigation-menu";
 import { useState } from "react";
 
 export default function MenuLinks({ isMobile = false }) {
