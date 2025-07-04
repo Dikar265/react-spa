@@ -19,7 +19,7 @@ function App() {
         button1={"Get Started"}
         button2={"Try for Free"}
       />
-      
+        
       <AboutSection h2={"lorem ipsum"} img={imgseccion2} texts={textProps} customWidget={sliderCards}/>
 
       <CardsServices/>
