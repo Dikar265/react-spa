@@ -4,7 +4,7 @@ import imgseccion2 from "../assets/pexels-caio-56733.jpg";
 import { textProps } from "../Props/TextAbout";
 import Testimonials from "../Components/TestimonialSecction";
 import { CardsServices } from "../Components/cards";
-import { SliderCards } from '../Components/cards.jsx';
+import { SliderCards } from '../Components/cards';
 
 function App() {
 
