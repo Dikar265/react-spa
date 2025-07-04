@@ -1,4 +1,4 @@
-import { BandCards } from "../../Components/Cards";
+import { BandCards } from "../../Components/cards";
 import { Underline } from "../../Components/Underline";
 import NumberGrid from "../../Components/NumberGrid";
 import petBlogStats from "../../Props/Numbers";
