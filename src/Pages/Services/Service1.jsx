@@ -29,7 +29,7 @@ export default function Service1() {
             </div>
             <div>
               <img
-                src="/src/assets/pexels-christy-rice-1208544-2353413.jpg"
+                src="/pexels-christy-rice-1208544-2353413.jpg"
                 className="w-auto h-full"
               />
             </div>
