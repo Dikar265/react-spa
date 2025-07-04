@@ -2,7 +2,7 @@ export const employees = [
   {
     name: "Dr. Sofia Ramirez",
     role: "General Veterinarian",
-    image: "../src/assets/pexels-svetozar-milashevich-99573-1490908.jpg",
+    image: "/pexels-svetozar-milashevich-99573-1490908.jpg",
     socials: {
       x: "https://x.com/",
       linkedin: "https://www.linkedin.com/",
@@ -12,7 +12,7 @@ export const employees = [
   {
     name: "Dr. Mateo Herrera",
     role: "Veterinary Surgeon",
-    image: "../src/assets/pexels-svetozar-milashevich-99573-1490908.jpg",
+    image: "/pexels-svetozar-milashevich-99573-1490908.jpg",
     socials: {
       x: "https://x.com/",
       linkedin: "https://www.linkedin.com/",
@@ -22,7 +22,7 @@ export const employees = [
   {
     name: "Camila Torres",
     role: "Veterinary Assistant",
-    image: "../src/assets/pexels-svetozar-milashevich-99573-1490908.jpg",
+    image: "/pexels-svetozar-milashevich-99573-1490908.jpg",
     socials: {
       x: "https://x.com/",
       linkedin: "https://www.linkedin.com/",
@@ -32,7 +32,7 @@ export const employees = [
   {
     name: "Esteban Morales",
     role: "Diagnostic Technician",
-    image: "../src/assets/pexels-svetozar-milashevich-99573-1490908.jpg",
+    image: "/pexels-svetozar-milashevich-99573-1490908.jpg",
     socials: {
       x: "https://x.com/",
       linkedin: "https://www.linkedin.com/",
@@ -42,7 +42,7 @@ export const employees = [
   {
     name: "Valentina Cruz",
     role: "Pet Groomer",
-    image: "../src/assets/pexels-svetozar-milashevich-99573-1490908.jpg",
+    image: "/pexels-svetozar-milashevich-99573-1490908.jpg",
     socials: {
       x: "https://x.com/",
       linkedin: "https://www.linkedin.com/",
@@ -52,7 +52,7 @@ export const employees = [
   {
     name: "Javier Rios",
     role: "Receptionist",
-    image: "../src/assets/pexels-svetozar-milashevich-99573-1490908.jpg",
+    image: "/pexels-svetozar-milashevich-99573-1490908.jpg",
     socials: {
       x: "https://x.com/",
       linkedin: "https://www.linkedin.com/",
@@ -62,7 +62,7 @@ export const employees = [
   {
     name: "Laura Mendoza",
     role: "Animal Nutrition Specialist",
-    image: "../src/assets/pexels-svetozar-milashevich-99573-1490908.jpg",
+    image: "/pexels-svetozar-milashevich-99573-1490908.jpg",
     socials: {
       x: "https://x.com/",
       linkedin: "https://www.linkedin.com/",
@@ -72,7 +72,7 @@ export const employees = [
   {
     name: "Andres Fuentes",
     role: "Clinic Manager",
-    image: "../src/assets/pexels-svetozar-milashevich-99573-1490908.jpg",
+    image: "/pexels-svetozar-milashevich-99573-1490908.jpg",
     socials: {
       x: "https://x.com/",
       linkedin: "https://www.linkedin.com/",
