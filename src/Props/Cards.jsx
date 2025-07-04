@@ -8,7 +8,7 @@ import {
   IconTarget,
   IconTrophy,
 } from "@tabler/icons-react";
-import imgseccion1 from "../assets/pexels-christy-rice-1208544-2353413.jpg";
+import imgseccion1 from "/pexels-christy-rice-1208544-2353413.jpg";
 import imgseccion2 from "../assets/pexels-freestockpro-1174081.jpg";
 
 export const cards = [
