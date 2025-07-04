@@ -1,4 +1,4 @@
-import { Card, CardContent, CardFooter } from "@/Components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 import {
   Carousel,
@@ -6,7 +6,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/Components/ui/carousel";
+} from "@/components/ui/carousel";
 
 import { blogs } from "../Props/Blog.js";
 import { Link } from "react-router-dom";
