@@ -3,7 +3,7 @@ import MenuLinks from "./MenuLinks/MenuLinks";
 import ContactLinks from "../ContactLinks";
 import Newsletter from "./Newsletter/Newsletter";
 import { Underline } from "../Underline";
-import SliderBlog from "../../Components/SliderBlog";
+import SliderBlog from "../../components/SliderBlog";
 
 export default function Footer() {
   return (

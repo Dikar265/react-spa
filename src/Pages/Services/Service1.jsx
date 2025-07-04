@@ -1,9 +1,9 @@
-import { BandCards } from "../../Components/Cards";
-import { Underline } from "../../Components/Underline";
-import NumberGrid from "../../Components/NumberGrid";
+import { BandCards } from "../../components/Cards";
+import { Underline } from "../../components/Underline";
+import NumberGrid from "../../components/NumberGrid";
 import petBlogStats from "../../Props/Numbers";
 import { servicetext1 } from "../../Props/TextAbout";
-import { Acordion } from "../../Components/Accordion";
+import { Acordion } from "../../components/Accordion";
 import { faqs } from "@/Props/Faq";
 
 export default function Service1() {

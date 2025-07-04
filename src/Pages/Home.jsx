@@ -1,10 +1,10 @@
-import {AboutSection} from "../Components/AboutSecction";
-import Banner from "../Components/Banner";
+import {AboutSection} from "../components/AboutSecction";
+import Banner from "../components/Banner";
 import imgseccion2 from "../assets/pexels-caio-56733.jpg";
 import { textProps } from "../Props/TextAbout";
-import Testimonials from "../Components/TestimonialSecction";
-import { CardsServices } from "../Components/Cards";
-import { SliderCards } from '../Components/Cards';
+import Testimonials from "../components/TestimonialSecction";
+import { CardsServices } from "../components/Cards";
+import { SliderCards } from '../components/Cards';
 
 function App() {
 

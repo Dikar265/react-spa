@@ -1,4 +1,4 @@
-import { H1, H2 } from "../Components/Headings";
+import { H1, H2 } from "../components/Headings";
 
 export function AboutSection({ h2, img, texts, customWidget }) {
   return (
