@@ -1,4 +1,4 @@
-import { AboutSection } from "../components/aboutSecction";
+import { AboutSection } from "../Components/AboutSecction";
 import Banner from "../components/Banner";
 import imgseccion2 from "../assets/pexels-caio-56733.jpg";
 import { textProps } from "../Props/TextAbout";
