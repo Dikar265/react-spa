@@ -9,6 +9,7 @@ import { SliderCards } from '../Components/Cards.jsx';
 function App() {
 
   const sliderCards = <SliderCards/>
+  
   return (
     <>
     

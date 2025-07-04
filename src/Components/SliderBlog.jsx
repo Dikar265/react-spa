@@ -12,16 +12,16 @@ import { blogs } from "../Props/Blog.js";
 import { Link } from "react-router-dom";
 export default function SliderBlog() {
   return (
-    <section className="p-25">
+    <section className="p-12 md:p-25">
       <Carousel
         opts={{
           align: "start",
         }}
-        className="basis-1/5 flex justify-center"
+        className="flex justify-center"
       >
         <CarouselContent className="-ml-1">
           {blogs.map((blog, index) => (
-            <CarouselItem key={index} className="basis-1/5 flex justify-center">
+            <CarouselItem key={index} className="basis-1-1 md:basis-1/5 flex justify-center">
               <div className="p-1">
                 <Card className="h-full w-full">
                   <CardContent className="flex flex-col justify-center rounded-2xl overflow-hidden relative p-4 ">

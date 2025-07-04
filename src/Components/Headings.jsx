@@ -1,9 +1,9 @@
 
 
-export const H1 = ({text}) => {
+export const H1 = ({text, color}) => {
 
     return(
-        <h1 className="text-4xl md:text-6xl capitalize font-bold text-center">{text}</h1>
+        <h1 className={`text-4xl md:text-6xl capitalize font-bold text-center ${color}`}>{text}</h1>
     )
 }
 

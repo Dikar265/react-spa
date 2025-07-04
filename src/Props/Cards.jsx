@@ -77,20 +77,6 @@ export const vetServices = [
     img: imgseccion2,
     link: "/service/2",
   },
-  {
-    tittle: "Dental Care",
-    description:
-      "Professional dental cleanings to keep your pet’s smile bright.",
-    img: imgseccion3,
-    link: "/service/3",
-  },
-  {
-    tittle: "Grooming",
-    description:
-      "Pamper your pet with full grooming services by our gentle team.",
-    img: imgseccion4,
-    link: "/service/4",
-  },
 ];
 
 export const logos = [

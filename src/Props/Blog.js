@@ -1,7 +1,7 @@
 export const blogs = [
   {
     category: "Workout Routines",
-    img: "https://via.placeholder.com/300",
+    img: "https://ultra-pet.co.za/wp-content/uploads/2020/08/socialising-800x630.jpg",
     name: "Full Body Workout",
     description: "A complete full-body routine to maximize strength and endurance.",
     url: "/blog/full-body-workout",
@@ -15,7 +15,7 @@ export const blogs = [
   },
   {
     category: "Workout Routines",
-    img: "https://via.placeholder.com/300",
+    img: "https://lh5.googleusercontent.com/proxy/3NzdTMjbbC1lG1iaAN_uM6_G-2mDVpZdlXmWZ3GjlH_2sB3M6r5_diZ2eohF20fdQA-B-hh_piCqT2R6etA5Wuv46NSREkbjdtCX2_YZhgLvTfYSGHD_l2GdN-A_Va6QUgDGFXr5",
     name: "HIIT for Fat Loss",
     description: "High-Intensity Interval Training to burn fat efficiently.",
     url: "/blog/hiit-fat-loss",
@@ -30,7 +30,7 @@ export const blogs = [
   },
   {
     category: "Strength Training",
-    img: "https://via.placeholder.com/300",
+    img: "https://lirp.cdn-website.com/05c0ce67/dms3rep/multi/opt/167580039-432w.png",
     name: "Strength Training",
     description: "Learn the best techniques to build muscle and gain strength.",
     url: "/blog/strength-training",
@@ -44,7 +44,7 @@ export const blogs = [
   },
   {
     category: "Cardio & Endurance",
-    img: "https://via.placeholder.com/300",
+    img: "https://www.pettravel.com/wp-content/uploads/2024/12/pet-travel-dog-and-cat-on-hotel-bed.jpg",
     name: "Cardio Workouts",
     description: "Improve your heart health with these cardio-focused exercises.",
     url: "/blog/cardio-workouts",
@@ -58,7 +58,7 @@ export const blogs = [
   },
   {
     category: "Nutrition & Diet",
-    img: "https://via.placeholder.com/300",
+    img: "https://vaccinar.com.br/wp-content/uploads/2020/08/cachorro-e-gato.png",
     name: "Nutrition Tips",
     description: "Fuel your workouts with the right nutrition strategies.",
     url: "/blog/nutrition-tips",
@@ -72,7 +72,7 @@ export const blogs = [
   },
   {
     category: "Recovery & Mobility",
-    img: "https://via.placeholder.com/300",
+    img: "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/H2QTK6NT2YPJCHVIGKAANNCWP4.jpg&w=1200",
     name: "Mobility & Stretching",
     description: "Enhance flexibility and prevent injuries with proper stretching.",
     url: "/blog/mobility-stretching",
@@ -86,7 +86,7 @@ export const blogs = [
   },
   {
     category: "Home Workouts",
-    img: "https://via.placeholder.com/300",
+    img: "https://t4.ftcdn.net/jpg/09/93/60/09/360_F_993600980_vj3J2FuyF2HdO0EoFG7VgkQQLJ3FuzPy.jpg",
     name: "Home Workouts",
     description: "No gym? No problem! Effective workouts you can do at home.",
     url: "/blog/home-workouts",
@@ -99,7 +99,7 @@ export const blogs = [
   },
   {
     category: "Weight Management",
-    img: "https://via.placeholder.com/300",
+    img: "https://www.mdanderson.org/images/publications/cancerwise/Generics/Pet%20Owners%20and%20Cancer%20Treatment.jpg",
     name: "Weight Loss Strategies",
     description: "Proven methods to shed pounds and maintain a healthy lifestyle.",
     url: "/blog/weight-loss-strategies",
@@ -112,7 +112,7 @@ export const blogs = [
   },
   {
     category: "Recovery & Mobility",
-    img: "https://via.placeholder.com/300",
+    img: "https://www.thesprucepets.com/thmb/NtUmBMLymcRzA1Ag4nDsidSkA2o=/4000x0/filters:no_upscale():strip_icc()/smallpets-recirc3_2-1a4df20ff50848e98f5925ac441067f6.jpg",
     name: "Muscle Recovery",
     description: "The best ways to recover faster and avoid burnout.",
     url: "/blog/muscle-recovery",
@@ -126,7 +126,7 @@ export const blogs = [
   },
   {
     category: "Beginner’s Guide",
-    img: "https://via.placeholder.com/300",
+    img: "https://www.rspcansw.org.au/wp-content/uploads/2025/01/Lesley-the-Dog-028-1-600x600.jpg",
     name: "Beginner’s Guide to Fitness",
     description: "Start your fitness journey with these essential beginner tips.",
     url: "/blog/beginners-guide-fitness",

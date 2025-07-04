@@ -2,12 +2,19 @@ import { useState, useMemo, useEffect } from "react";
 import { blogs } from "@/Props/Blog";
 import { Link, useSearchParams } from "react-router-dom";
 import { H2 } from "./Headings";
+import {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationPrevious,
+  PaginationNext,
+} from "@/components/ui/pagination";
 
 export default function BlogsCard({ selectedCategory: selectedCategoryProp }) {
   const blogsPerPage = 5;
   const [searchParams] = useSearchParams();
   const categoryFromURL = searchParams.get("category");
-
   const selectedCategory = selectedCategoryProp || categoryFromURL;
 
   const [currentPage, setCurrentPage] = useState(1);
@@ -27,52 +34,64 @@ export default function BlogsCard({ selectedCategory: selectedCategoryProp }) {
   const selectedBlogs = filterBlogs.slice(startIndex, startIndex + blogsPerPage);
 
   return (
-    <div className="w-3/4">
+    <div className="w-full max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8">
       {selectedBlogs.length > 0 ? (
         selectedBlogs.map((blog, index) => (
           <article
-            className="flex flex-col gap-4 mb-8 border-b-2 border-b-aquamarine-100 pb-12"
+            className="flex flex-col gap-4 mb-10 border-b border-aquamarine-100 pb-8"
             key={index}
           >
-            <img src={blog.img} className="bg-red-300 w-full h-96" />
-            <H2 text={blog.name}/>
-            <p className="line-clamp-2 text-[16px]">{blog.content}</p>
-            <div className="flex items-center">
-            <Link
-              to={`/blog/${blog.name.toLowerCase().replace(/\s+/g, "-")}`}
-              className="text-center p-3 pr-5 pl-5 border-2 border-aquamarine-300 text-aquamarine-400 hover:bg-aquamarine-300 hover:text-white transition-all duration-300"
-            >
-              See more
-            </Link>
+            <img
+              src={blog.img}
+              alt={blog.name}
+              className="w-full h-[200px] sm:h-[250px] md:h-96 object-cover rounded-lg"
+            />
+            <H2 text={blog.name} />
+            <p className="line-clamp-2 text-sm sm:text-base text-gray-700">{blog.content}</p>
+            <div className="mt-2">
+              <Link
+                to={`/blog/${blog.name.toLowerCase().replace(/\s+/g, "-")}`}
+                className="inline-block text-center px-5 py-2 border-2 border-aquamarine-300 text-aquamarine-400 hover:bg-aquamarine-300 hover:text-white transition-all duration-300 text-sm sm:text-base"
+              >
+                See more
+              </Link>
             </div>
           </article>
         ))
       ) : (
-        <p>No blogs found for this category.</p>
+        <p className="text-center py-10">No blogs found for this category.</p>
       )}
 
-      <div className="flex justify-center gap-4 mt-4 text-aquamarine-950">
-        <button
-          onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
-          disabled={currentPage === 1}
-          className="px-4 py-2 rounded disabled:opacity-50 bg-aquamarine-200 transition hover:bg-aquamarine-300"
-        >
-          Previous
-        </button>
+      {/* Pagination */}
+      <div className="flex justify-center mt-8">
+        <Pagination>
+          <PaginationContent>
+            <PaginationItem>
+              <PaginationPrevious
+                onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
+                className={currentPage === 1 ? "pointer-events-none opacity-50" : ""}
+              />
+            </PaginationItem>
 
-        <span className="px-4 py-2">
-          Page {currentPage} from {totalPages}
-        </span>
+            {Array.from({ length: totalPages }, (_, index) => (
+              <PaginationItem key={index}>
+                <PaginationLink
+                  isActive={currentPage === index + 1}
+                  onClick={() => setCurrentPage(index + 1)}
+                >
+                  {index + 1}
+                </PaginationLink>
+              </PaginationItem>
+            ))}
 
-        <button
-          onClick={() =>
-            setCurrentPage((prev) => Math.min(prev + 1, totalPages))
-          }
-          disabled={currentPage === totalPages}
-          className="px-4 py-2 rounded disabled:opacity-50 bg-aquamarine-200 transition hover:bg-aquamarine-300"
-        >
-          Next
-        </button>
+            <PaginationItem>
+              <PaginationNext
+                onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
+                className={currentPage === totalPages ? "pointer-events-none opacity-50" : ""}
+              />
+            </PaginationItem>
+          </PaginationContent>
+        </Pagination>
       </div>
     </div>
   );

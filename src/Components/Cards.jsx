@@ -18,15 +18,16 @@ useEmblaCarousel.globalOptions = { loop: true };
 
 export const SliderCards = () => {
   return (
+    <div className="p-12 md:p-25">
     <Carousel
       opts={{
         align: "start",
       }}
-      className="basis-1/5 flex justify-center"
+      className="flex justify-center"
     >
       <CarouselContent className="-ml-1">
         {cards.map((card, index) => (
-          <CarouselItem key={index} className="basis-1/3 flex justify-center">
+          <CarouselItem key={index} className="basis-1/1 md:basis-1/3 flex justify-center">
             <div className="p-1">
               <Card className="bg-gradient-to-b rounded-2xl p-6 flex flex-col items-center text-center h-[250px] shadow-xl mb-10 bg-aquamarine-300">
                 <CardContent>
@@ -38,7 +39,7 @@ export const SliderCards = () => {
                     {card.tittle}
                   </h3>
 
-                  <p className=" text-sm mt-3 px-4 text-aquamarine-800">
+                  <p className="text-xs md:text-sm mt-3 px-4 text-aquamarine-800">
                     {card.description}
                   </p>
                 </CardContent>
@@ -50,12 +51,13 @@ export const SliderCards = () => {
       <CarouselPrevious/>
       <CarouselNext />
     </Carousel>
+    </div>
   );
 };
 
 export const CardsServices = () => {
   return (
-    <section className="grid grid-cols-2">
+    <section className="grid grid-cols-1 md:grid-cols-2 ">
       {vetServices.map((vetService, index) => (
         <div
           key={index}
@@ -87,14 +89,13 @@ export const BandCards = () => {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full max-w-9/10"
+      className="flex justify-center max-w-9/10"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
       <CarouselContent>
         {logos.map((logo, index) => (
-          <CarouselItem key={index} className="basis-1/8 flex justify-center">
-            <div className="p-1">
+          <CarouselItem key={index} className="basis-1/3 md:basis-1/8 flex justify-center">
               
                 <CardContent className="flex aspect-square items-center justify-center p-6">
                   <a href={logo.link} target="_blanck">
@@ -102,12 +103,9 @@ export const BandCards = () => {
                   </a>
                 </CardContent>
               
-            </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
     </Carousel>
   );
 };

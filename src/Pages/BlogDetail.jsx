@@ -15,10 +15,11 @@ export default function BlogDetail() {
 
   return (
     <>
-      <div
-        className={`flex justify-center items-center h-[30vw] bg-[url(${blog.img})] bg-cover bg-center`}
-      >
-        <H1 text={blog.name}/>
+<div
+  className="flex justify-center items-center h-[30vw] bg-cover bg-center bg-black/50 bg-blend-darken"
+  style={{ backgroundImage: `url(${blog.img})` }}
+>
+        <H1 text={blog.name} color={"text-white"}/>
       </div>
       <div className="flex w-full bg-aquamarine-100 p-9 max-w-7xl ml-auto mr-auto -mt-12 rounded-lg mb-16">
         <article className="p-9 w-3/4 ">
