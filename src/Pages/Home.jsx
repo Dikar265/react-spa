@@ -1,28 +1,33 @@
-import {AboutSection} from "../components/AboutSecction";
+import { AboutSection } from "../components/AboutSecction";
 import Banner from "../components/Banner";
 import imgseccion2 from "../assets/pexels-caio-56733.jpg";
 import { textProps } from "../Props/TextAbout";
 import Testimonials from "../components/TestimonialSecction";
 import { CardsServices } from "../components/Cards";
-import { SliderCards } from '../components/Cards';
+import { SliderCards } from "../components/Cards";
 
 function App() {
+  const sliderCards = <SliderCards />;
 
-  const sliderCards = <SliderCards/>
-  
   return (
     <>
-    
       <Banner
         h1={"Welcomen"}
-        p={"Lorem ipsum dolor sit amet consectetur adipisicing elit. A nisi iure commodi odio, quaerat pariatur vel consequuntur mollitia illo?"}
+        p={
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. A nisi iure commodi odio, quaerat pariatur vel consequuntur mollitia illo?"
+        }
         button1={"Get Started"}
         button2={"Try for Free"}
       />
-        
-      <AboutSection h2={"lorem ipsum"} img={imgseccion2} texts={textProps} customWidget={sliderCards}/>
 
-      <CardsServices/>
+      <AboutSection
+        h2={"lorem ipsum"}
+        img={imgseccion2}
+        texts={textProps}
+        customWidget={sliderCards}
+      />
+
+      <CardsServices />
       <Testimonials h2={"What Our Members Say"} />
     </>
   );
