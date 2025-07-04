@@ -2,7 +2,7 @@ import { useRef } from "react";
 import { cards, vetServices, logos } from "@/Props/Cards.jsx";
 import { IconCircleArrowRight } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
-import { Card, CardContent } from "@/Components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
 
 import {
