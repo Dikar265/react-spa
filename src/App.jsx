@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./Components/ScrollToTop";
 import Home from "./Pages/Home";
 import Services1 from "./Pages/Services/Service1";
 import Services2 from "./Pages/Services/Service2";
 import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
 import BlogDetail from "./Pages/BlogDetail";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
